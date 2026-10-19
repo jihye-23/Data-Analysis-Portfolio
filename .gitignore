@@ -3,3 +3,6 @@
 
 # Mac OS용 설정 파일 업로드 제외
 .DS_Store
+
+__pycache__/
+*.py[cod]
