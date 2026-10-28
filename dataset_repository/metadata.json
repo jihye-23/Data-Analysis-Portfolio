@@ -4,20 +4,133 @@
     "desc": "보스턴 인근 지역의 인구·환경·교육·범죄·세금 정보 등을 기반으로 주택의 중위가격(MEDV)을 예측하기 위해 수집된 대표적인 회귀 분석용 주택시장 데이터 (출처: https://www.kaggle.com/datasets/altavish/boston-housing-dataset)",
     "source": "https://www.kaggle.com/datasets/altavish/boston-housing-dataset",
     "metadata": {
-      "CRIM": "타운별 1인당 범죄율 (Per capita crime rate by town)",
-      "ZN": "25,000 sqft 이상 주거용 대지 비율 (Proportion of residential land zoned for large lots)",
-      "INDUS": "비소매 상업구역 비율 (Proportion of non-retail business acres per town)",
-      "CHAS": "명목형, 찰스강 인접 여부 (Charles River dummy variable: 1 if tract bounds river; 0 otherwise)",
-      "NOX": "대기 오염 정도 (Nitric oxides concentration, parts per 10 million)",
-      "RM": "주택당 평균 방 수 (Average number of rooms per dwelling)",
-      "AGE": "1940년 이전 건축 비율 (Proportion of owner-occupied units built prior to 1940)",
-      "DIS": "5개 주요 고용센터까지의 거리 (Weighted distances to five Boston employment centers)",
-      "RAD": "고속도로 접근성 지수 (Index of accessibility to radial highways)",
-      "TAX": "재산세율 (Full-value property-tax rate per $10,000)",
-      "PTRATIO": "교육구 학생-교사 비율 (Pupil–teacher ratio by town)",
-      "B": "흑인 비율 지수 (1000(Bk − 0.63)²; Bk = proportion of Black residents)",
-      "LSTAT": "저소득층 비율 (%) (Percentage of lower status population)",
-      "MEDV": "주택 가격 중앙값(단위: $1,000) (Median value of owner-occupied homes in $1000s)"
+      "CRIM": "타운별 1인당 범죄율",
+      "ZN": "25,000 sqft 이상 주거용 대지 비율",
+      "INDUS": "타운별 비소매 상업지역 면적 비율",
+      "CHAS": "찰스강 인접 여부 (인접=1, 미인접=0)",
+      "NOX": "산화질소 농도",
+      "RM": "주택당 평균 방 수",
+      "AGE": "1940년 이전에 건축된 자가주택 비율",
+      "DIS": "보스턴 주요 고용센터까지의 가중 거리",
+      "RAD": "방사형 고속도로 접근성 지수",
+      "TAX": "재산세율",
+      "PTRATIO": "타운별 학생·교사 비율",
+      "B": "타운별 흑인 주민 비율을 변환한 지수",
+      "LSTAT": "저소득층 인구 비율(%)",
+      "MEDV": "자가주택 중위가격(단위: 1,000달러)"
+    }
+  },
+  "insurance": {
+    "url": "datasets/insurance.csv",
+    "desc": "개인의 나이·성별·BMI·자녀 수·흡연 여부·거주 지역을 바탕으로 의료보험 청구 비용을 분석하고 예측하는 데이터셋 (출처: https://www.kaggle.com/datasets/mirichoi0218/insurance)",
+    "source": "https://www.kaggle.com/datasets/mirichoi0218/insurance",
+    "metadata": {
+      "age": "보험 가입자의 나이",
+      "sex": "보험 가입자의 성별 (male, female)",
+      "bmi": "체질량지수(Body Mass Index)",
+      "children": "보험에 등록된 부양 자녀 수",
+      "smoker": "흡연 여부 (yes, no)",
+      "region": "미국 내 거주 지역 (northeast, northwest, southeast, southwest)",
+      "charges": "개인별 의료보험 청구 비용"
+    }
+  },
+  "diamonds": {
+    "url": "datasets/diamonds.csv",
+    "desc": "다이아몬드의 중량·커팅 품질·색상·투명도·크기 등의 특성을 바탕으로 가격을 분석하고 예측하는 데이터셋 (출처: https://www.kaggle.com/datasets/shivam2503/diamonds)",
+    "source": "https://www.kaggle.com/datasets/shivam2503/diamonds",
+    "metadata": {
+      "carat": "다이아몬드 중량(캐럿)",
+      "cut": "다이아몬드 커팅 품질 (Fair, Good, Very Good, Premium, Ideal)",
+      "color": "다이아몬드 색상 등급 (J부터 D까지이며 D가 가장 높은 등급)",
+      "clarity": "다이아몬드 투명도 등급",
+      "depth": "다이아몬드 전체 깊이 비율",
+      "table": "다이아몬드 상단면의 너비 비율",
+      "price": "다이아몬드 가격(미국 달러)",
+      "x": "다이아몬드 길이(mm)",
+      "y": "다이아몬드 너비(mm)",
+      "z": "다이아몬드 깊이(mm)"
+    }
+  },
+  "housing": {
+    "url": "datasets/housing.csv",
+    "desc": "주택 면적·침실 수·욕실 수·층수·주차 공간·가구 비치 상태 등의 특성을 바탕으로 주택 가격을 분석하고 예측하는 데이터셋 (출처: https://www.kaggle.com/datasets/yasserh/housing-prices-dataset)",
+    "source": "https://www.kaggle.com/datasets/yasserh/housing-prices-dataset",
+    "metadata": {
+      "price": "주택 가격",
+      "area": "주택 건축 면적",
+      "bedrooms": "침실 수",
+      "bathrooms": "욕실 수",
+      "stories": "주택 층수",
+      "mainroad": "주요 도로 인접 여부 (yes, no)",
+      "guestroom": "게스트룸 보유 여부 (yes, no)",
+      "basement": "지하실 보유 여부 (yes, no)",
+      "hotwaterheating": "온수 난방 설비 보유 여부 (yes, no)",
+      "airconditioning": "에어컨 보유 여부 (yes, no)",
+      "parking": "주차 가능 차량 수",
+      "prefarea": "선호 지역 포함 여부 (yes, no)",
+      "furnishingstatus": "가구 비치 상태 (furnished, semi-furnished, unfurnished)"
+    }
+  },
+  "apple_quality": {
+    "url": "datasets/apple_quality.csv",
+    "desc": "사과의 크기·무게·당도·아삭함·과즙량·숙성도·산도 등의 특성을 바탕으로 품질을 분류하는 데이터셋 (출처: https://www.kaggle.com/datasets/nelgiriyewithana/apple-quality)",
+    "source": "https://www.kaggle.com/datasets/nelgiriyewithana/apple-quality",
+    "metadata": {
+      "A_id": "사과를 구분하기 위한 식별번호",
+      "Size": "사과의 크기",
+      "Weight": "사과의 무게",
+      "Sweetness": "사과의 당도",
+      "Crunchiness": "사과의 아삭한 정도",
+      "Juiciness": "사과의 과즙량",
+      "Ripeness": "사과의 숙성도",
+      "Acidity": "사과의 산도",
+      "Quality": "사과의 품질 등급 (good, bad)"
+    }
+  },
+  "titanic": {
+    "url": "datasets/Titanic.csv",
+    "desc": "타이타닉호 탑승객의 객실 등급·성별·나이·가족관계·운임 등의 정보를 바탕으로 생존 여부를 분석하고 예측하는 데이터셋 (출처: https://www.kaggle.com/datasets/yasserh/titanic-dataset)",
+    "source": "https://www.kaggle.com/datasets/yasserh/titanic-dataset",
+    "metadata": {
+      "PassengerId": "탑승객 식별번호",
+      "Survived": "생존 여부 (생존=1, 사망=0)",
+      "Pclass": "객실 등급 (1등석=1, 2등석=2, 3등석=3)",
+      "Name": "탑승객 이름",
+      "Sex": "탑승객 성별",
+      "Age": "탑승객 나이",
+      "SibSp": "함께 탑승한 형제·자매 또는 배우자 수",
+      "Parch": "함께 탑승한 부모 또는 자녀 수",
+      "Ticket": "승차권 번호",
+      "Fare": "승차권 운임",
+      "Cabin": "객실 번호",
+      "Embarked": "탑승 항구 (C=Cherbourg, Q=Queenstown, S=Southampton)"
+    }
+  },
+  "manhattan": {
+    "url": "datasets/manhattan.csv",
+    "desc": "뉴욕 맨해튼 임대주택의 월세·면적·침실 수·욕실 수·지하철 접근성·건물 편의시설 등의 정보를 담은 주택 임대시장 데이터셋 (출처: https://www.kaggle.com/datasets/zohaib30/streeteasy-dataset)",
+    "source": "https://www.kaggle.com/datasets/zohaib30/streeteasy-dataset",
+    "metadata": {
+      "rental_id": "임대 매물 식별번호",
+      "building_id": "건물 식별번호",
+      "rent": "월 임대료(미국 달러)",
+      "bedrooms": "침실 수",
+      "bathrooms": "욕실 수",
+      "size_sqft": "주택 면적(제곱피트)",
+      "min_to_subway": "가장 가까운 지하철역까지의 도보 시간(분)",
+      "floor": "매물이 위치한 층",
+      "building_age_yrs": "건물 준공 후 경과 연수",
+      "no_fee": "중개 수수료가 없는 매물인지 여부",
+      "has_roofdeck": "옥상 데크 보유 여부",
+      "has_washer_dryer": "세탁기·건조기 보유 여부",
+      "has_doorman": "도어맨 배치 여부",
+      "has_elevator": "엘리베이터 보유 여부",
+      "has_dishwasher": "식기세척기 보유 여부",
+      "has_patio": "파티오 보유 여부",
+      "has_gym": "건물 내 헬스장 보유 여부",
+      "neighborhood": "매물이 위치한 맨해튼 내 세부 지역",
+      "borough": "뉴욕시 자치구"
     }
   }
 }
+
