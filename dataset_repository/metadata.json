@@ -131,6 +131,78 @@
       "neighborhood": "매물이 위치한 맨해튼 내 세부 지역",
       "borough": "뉴욕시 자치구"
     }
+  },
+  "churn": {
+    "url": "datasets/telco_customer_churn.csv",
+    "desc": "통신사 고객의 인구통계·가입 기간·계약 방식·이용 서비스·요금 정보를 바탕으로 고객의 서비스 이탈 여부를 분석하고 예측하는 분류 데이터셋 (출처: https://www.kaggle.com/datasets/blastchar/telco-customer-churn)",
+    "source": "https://www.kaggle.com/datasets/blastchar/telco-customer-churn",
+    "metadata": {
+      "customerID": "고객 식별번호",
+      "gender": "고객 성별 (Female, Male)",
+      "SeniorCitizen": "고령자 여부 (고령자=1, 비고령자=0)",
+      "Partner": "배우자 보유 여부 (Yes, No)",
+      "Dependents": "부양가족 보유 여부 (Yes, No)",
+      "tenure": "서비스 가입 기간(개월)",
+      "PhoneService": "전화 서비스 이용 여부 (Yes, No)",
+      "MultipleLines": "다중 전화회선 이용 여부 (Yes, No, No phone service)",
+      "InternetService": "인터넷 서비스 유형 (DSL, Fiber optic, No)",
+      "OnlineSecurity": "온라인 보안 서비스 이용 여부",
+      "OnlineBackup": "온라인 백업 서비스 이용 여부",
+      "DeviceProtection": "기기 보호 서비스 이용 여부",
+      "TechSupport": "기술 지원 서비스 이용 여부",
+      "StreamingTV": "TV 스트리밍 서비스 이용 여부",
+      "StreamingMovies": "영화 스트리밍 서비스 이용 여부",
+      "Contract": "계약 유형 (Month-to-month, One year, Two year)",
+      "PaperlessBilling": "전자 청구서 이용 여부 (Yes, No)",
+      "PaymentMethod": "요금 결제 방법",
+      "MonthlyCharges": "월 이용 요금",
+      "TotalCharges": "누적 이용 요금",
+      "Churn": "고객의 서비스 이탈 여부 (Yes, No)"
+    }
+  },
+  "attrition": {
+    "url": "datasets/employee_attrition.csv",
+    "desc": "직원의 나이·직무·급여·근무 환경·만족도·경력·초과근무 등의 정보를 바탕으로 퇴사 여부를 분석하고 예측하는 인사 분류 데이터셋 (출처: https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)",
+    "source": "https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset",
+    "metadata": {
+      "Age": "직원의 나이",
+      "Attrition": "직원의 퇴사 여부 (Yes, No)",
+      "BusinessTravel": "출장 빈도",
+      "DailyRate": "일일 급여율",
+      "Department": "소속 부서",
+      "DistanceFromHome": "집에서 직장까지의 거리",
+      "Education": "교육 수준",
+      "EducationField": "전공 분야",
+      "EmployeeCount": "직원 수를 나타내는 고정값",
+      "EmployeeNumber": "직원 식별번호",
+      "EnvironmentSatisfaction": "근무 환경 만족도",
+      "Gender": "직원의 성별 (Female, Male)",
+      "HourlyRate": "시간당 급여율",
+      "JobInvolvement": "직무 참여도",
+      "JobLevel": "직급 수준",
+      "JobRole": "담당 직무",
+      "JobSatisfaction": "직무 만족도",
+      "MaritalStatus": "결혼 상태",
+      "MonthlyIncome": "월 급여",
+      "MonthlyRate": "월 급여율",
+      "NumCompaniesWorked": "근무했던 회사 수",
+      "Over18": "18세 초과 여부를 나타내는 고정값",
+      "OverTime": "초과근무 여부 (Yes, No)",
+      "PercentSalaryHike": "급여 인상률(%)",
+      "PerformanceRating": "업무 성과 평가",
+      "RelationshipSatisfaction": "직장 내 관계 만족도",
+      "StandardHours": "표준 근무시간을 나타내는 고정값",
+      "StockOptionLevel": "주식매수선택권 수준",
+      "TotalWorkingYears": "총 경력 연수",
+      "TrainingTimesLastYear": "지난해 교육 참여 횟수",
+      "WorkLifeBalance": "일과 생활의 균형 수준",
+      "YearsAtCompany": "현재 회사 근속 연수",
+      "YearsInCurrentRole": "현재 직무 근속 연수",
+      "YearsSinceLastPromotion": "최근 승진 이후 경과 연수",
+      "YearsWithCurrManager": "현재 관리자와 함께 근무한 연수"
+    }
   }
 }
+
+
 
